@@ -1,0 +1,145 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{New Simple CV}
+\author{\LaTeX{} Ninja}
+\date{June 2019}
+
+\pagestyle{empty}
+\begin{document}
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Rocio}{Gomez}{Estudiante de Ingeniería Industrial}{white}
+
+%------------------------------------------------
+
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+
+\paracolbackgroundoptions
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{perfil.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{Sobre mi}\\[0.5em]
+
+{\footnotesize
+\lorem\lorem\lorem}
+\bigskip
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Rocio Gomez
+
+Nacionalidad: Argentina
+
+2004
+
+\bigskip
+
+\bg{cvgreen}{white}{Áreas de especialización} \\[0.5em]
+
+Organización ~•~ Tecnología ~•~ Aprender ~•~ Liderazgo
+
+\bigskip
+
+\infobubble{\faAt}{cvgreen}{white}{\small Rocio-Gomez}
+\infobubble{\faTwitter}{cvgreen}{white}{@gomezrrocio}
+\infobubble{\faInstagram}{cvgreen}{white}{rogomezfl}
+
+\phantom{turn the page}
+\phantom{turn the page}
+}
+
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Resumen Corto}
+
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2025 - Actualidad}{Vendedora y Community Manager}{Vita Gelatteria}{Junín \color{cvred}}{Gestión de proveedores, atención al cliente, manejo de caja y manejo de Instagram para atraer clientes}{} \\
+    
+    \cvevent{2023-Actualidad}{Estudiante de Ingeniería Industrial}{UNCuyo}{Mendoza \color{cvred}}{Me encuentro cursando el tercer año de la carrera}{} \\
+\end{tabular}
+
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Certificados}
+\begin{tabular}{r p{0.6\textwidth} c}
+    \cvdegree{2022}{Bachiller en Economía y Administración de Empresas}{4-055}{Presbítero Constantino Spagnolo \color{headerblue}}{Junín, Mendoza}{pcs.jpg} \\
+\end{tabular}
+\end{minipage}\hfill
+
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Distribución de mi tiempo}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Facultad} & \barrule{0.6}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{Trabajo} & \barrule{0.15}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Gym} & \barrule{0.1}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Para mi} & \barrule{0.15}{0.5em}{cvpurple} \\
+\end{tabular}
+\end{minipage}
+
+\section*{Proyectos Destacados}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2023}{Visita a Bodega Los Haroldos}{Introducción a la Ingeniería}{}{Visitamos la bodega y un Ingeniero Industrial nos explicó el proceso productivo. Luego realizamos y defendimos un informe en el examen final.}{} \\
+    
+    \cvevent{2024}{AutoCAD}{Sistema de Representación Gráfica}{}{Diseño de planos y piezas a escala durante la cursada.}{} \\
+    
+    \cvevent{2025}{Octave}{Métodos Numéricos}{}{Resolución de ecuaciones, integrales y otros problemas mediante programación.}{} \\
+\end{tabular}
+
+\vspace{3em}
+
+\begin{minipage}[t]{0.3\textwidth}
+
+\section*{Idiomas}
+\begin{tabular}{l | ll}
+\textbf{Español} & C2 & {\footnotesize Lengua materna} \\
+\textbf{Ingles} & A2 & \pictofraction{\faCircle}{cvgreen}{3}{black!30}{1}{\tiny} \\
+\end{tabular}
+
+\end{minipage}\hfill
+
+\vfill{}
+
+\setlength{\parindent}{0pt}
+\begin{minipage}[t]{\rightcolwidth}
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Rocio Gomez \icon{\faMapMarker}{cvgreen}{} Mendoza \icon{\faPhone}{cvgreen}{} 2634554118 \newline\icon{\faAt}{cvgreen}{} rociogomez4772@gmail.com}
+\end{center}
+\end{minipage}
+
+\end{paracol}
+
+\end{document}
